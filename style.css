@@ -112,3 +112,35 @@
     margin-top: 42px;
   }
 }
+
+
+/* PC intro fix for Ideas and Rooms pages */
+.page-intro {
+  display: block !important;
+  max-width: 980px !important;
+  padding-bottom: 38px !important;
+  border-bottom: 1px solid var(--line) !important;
+}
+
+.page-intro h1 {
+  max-width: 860px !important;
+  font-size: clamp(52px, 7.6vw, 98px) !important;
+  line-height: 0.98 !important;
+  margin-bottom: 24px !important;
+}
+
+.page-intro p:not(.kicker) {
+  max-width: 620px !important;
+  color: var(--muted) !important;
+  font-size: clamp(18px, 1.8vw, 22px) !important;
+}
+
+@media (max-width: 680px) {
+  .page-intro h1 {
+    font-size: clamp(42px, 13vw, 68px) !important;
+  }
+
+  .page-intro p:not(.kicker) {
+    font-size: 18px !important;
+  }
+}
